@@ -36,3 +36,68 @@
     transform: rotate(360deg);
   }
 }
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%; /* Occupy half the width */
+  height: 100%; /* Full height */
+  background-color: white;
+  border-left: 1px solid blue;
+  padding: 10px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  animation: slide-in 0.3s forwards; /* Animation */
+}
+
+@keyframes slide-in {
+  from {
+      transform: translateX(100%); /* Start from the right */
+      opacity: 0; /* Start hidden */
+  }
+  to {
+      transform: translateX(0); /* End at the normal position */
+      opacity: 1; /* Fully visible */
+  }
+}
+.popup-header{
+  background-color: #126981;
+  color:white ;
+  border-radius: 1px;
+  font-size: 15px
+  
+}
+.header-icon{
+  size: 10px;
+  margin-top: 2px; 
+}
+.radio-btn{
+  display: flex;
+  font-size: 12px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.botton-btns{
+  background-color: rgb(235, 237, 239);
+  height: 10%;
+  border-radius: 5px;
+  align-items: center;
+  padding-top: 10px;
+}
+.add-new-btn{
+  border-radius: none;
+  margin: 5px;
+  cursor: pointer;
+  color: #04AA6D;
+}.popup-header {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  padding: 10px 0; /* Optional padding */
+}
+
+.header-title {
+  display: flex; /* Ensure the title can flex */
+  align-items: center; /* Aligns icon and text vertically */
+  margin: 0; /* Remove default margin */
+}
+/* ////// */
+
