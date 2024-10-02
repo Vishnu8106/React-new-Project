@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SegmentForm from "./form";
+import { MdArrowBackIosNew } from "react-icons/md";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="popup-header">
+        <h3 className="header-title">
+          <MdArrowBackIosNew
+            style={{ marginRight: "10px" }}
+            size={30}
+            className="header-icon"
+          />
+          Save Segment
+        </h3>
+      </div>
+      <SegmentForm />
     </div>
   );
-}
+};
 
 export default App;
+    
