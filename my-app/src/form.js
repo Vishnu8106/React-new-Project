@@ -119,7 +119,7 @@ const SegmentForm = () => {
                   <span>
                     <FaCircle
                       style={{ paddingLeft: "2px", color: "red" }}
-                      size={15}
+                      size={16}
                     />
                   </span>
                   - Group Tracks
